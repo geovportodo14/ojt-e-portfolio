@@ -3,7 +3,7 @@
 Single-page e-portfolio for the **Blueshift Active Monitoring Project**, completed as the 500-hour On-the-Job Training requirement for BS Computer Science at the Technological Institute of the Philippines - Manila.
 
 **Authors:** Geovanny V. Portodo &bull; Marcus Kent R. Oliver
-**Period:** January 12 &ndash; March 30, 2026
+**Period:** January 6 &ndash; March 30, 2026
 **Host company:** Blueshift Energy Inc., Ortigas, Metro Manila
 
 ## Stack
