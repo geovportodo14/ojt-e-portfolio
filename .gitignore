@@ -1,0 +1,26 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node (if you ever add any tooling)
+node_modules/
+.vercel
+
+# Source markdown notes (not needed in the deployed site)
+01-student-profiles.md
+02-company-profile.md
+03-background-training.md
+04-deliverables.md
+05-professional-learning.md
+06-techniques-skills-tools.md
+07-discipline-solutions.md
+08-reflection.md
+OBTL_PORTFOLIO.md
+STRIKINGLY_MAPPING_GUIDE.md
+_INVENTORY.md
+_SUMMARY.md
