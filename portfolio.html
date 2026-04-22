@@ -2814,7 +2814,9 @@
     document.addEventListener('DOMContentLoaded', function () {
       var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-      /* Fade-in on scroll */
+      /* Fade-in on scroll — trigger as soon as top of section reaches 10% into viewport.
+         Uses threshold 0 (+ negative rootMargin) so very tall sections still fire on
+         short mobile viewports where a 12% intersection ratio can't be reached. */
       var targets = document.querySelectorAll('.fade-in');
       if ('IntersectionObserver' in window && !reduceMotion) {
         var observer = new IntersectionObserver(function (entries) {
@@ -2824,7 +2826,7 @@
               observer.unobserve(entry.target);
             }
           });
-        }, { threshold: 0.12 });
+        }, { threshold: 0, rootMargin: '0px 0px -10% 0px' });
         targets.forEach(function (t) { observer.observe(t); });
       } else {
         targets.forEach(function (t) { t.classList.add('visible'); });
